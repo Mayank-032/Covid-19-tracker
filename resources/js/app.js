@@ -87,6 +87,8 @@ function fetchData(user_country){
 	})
 }
 
+fetchData(user_country);
+
 // Update UI function
 function updateUI(){
 	updateStats();
