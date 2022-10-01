@@ -114,7 +114,7 @@ function updateStats(){
 }
 
 // FORMAT DATES
-const monthsNames = ["Jan","Feb","Mar","Apr","May","Jun","Aug","Sep","Oct","Nov","Dec"];
+const monthsNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 function formatDate(dateString){
 	let date = new Date(dateString);
