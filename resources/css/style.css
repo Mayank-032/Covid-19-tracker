@@ -60,9 +60,6 @@ header{
 	color: #6a149b;
 }
 /* -------- NAV -------- */
-nav{
-	
-}
 nav ul{
 	display: flex;
 	align-items: center;
@@ -81,6 +78,9 @@ nav ul li a{
 /* ---------------------------------------------- */
 /*                      MAIN                      */
 /* ---------------------------------------------- */
+body{
+	background-color: lightblue;
+}
 main{
 	max-width: 1200px;
 	margin: 0 auto;
@@ -140,7 +140,7 @@ main{
 }
 /* -------- CHART -------- */
 .chart{
-	width: 80%
+	width: 80%;
 	height: 70vh;
 	min-height: 500px;
 	margin: 0 auto;
