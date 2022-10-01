@@ -1,3 +1,25 @@
+// Database connection added
+const app = express();
+
+const MongoClient = require("mongodb").MongoClient;
+
+var db;
+MongoClient.connect(
+  "mongodb+srv://Mayank:2002@library-crud-cluster.zchbxy9.mongodb.net/test",
+  (err, client) => {
+    if (err) {
+      return console.log(err);
+    } else {
+      db = client.db("BooksDB");
+
+      app.listen(process.env.PORT || 8000, () => {
+        console.log("Listening on Port 8000");
+      });
+    }
+  }
+);
+
+
 // ALL COUNTRY NAMES WITH THEIR ISO CODE
 let country_list = [
     { name: 'USA', code: 'US' },
